@@ -27,6 +27,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 echo "${params.SDLC_ENV} is value retrieved!"
+                echo "hello"
             }
         }
         stage('DeployToDev') {
