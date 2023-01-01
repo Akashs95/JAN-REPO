@@ -7,7 +7,7 @@ Make sure below Apache Tomcate Web Servers are already setup for SDLC Environmen
 pipeline {
     agent any
     tools {
-        maven 'Maven_Local'
+        maven 'maven'
     }
     parameters {
         string(name: 'SDLC_ENV', defaultValue: '', description: 'Enter SDLC Environment')
