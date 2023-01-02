@@ -35,7 +35,7 @@ pipeline {
                 environment name: 'SDLC_ENV', value: 'dev'
             }
             steps {
-                deploy adapters: [tomcat9(credentialsId: 'deployer', path: '', url: 'http://172.31.82.140:8080')], contextPath: 'java-app', onFailure: false, war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'deployer', path: '', url: 'http://172.31.82.140:8080')], contextPath: 'abc-app', onFailure: false, war: '**/*.war'
             }
         }
         stage('DeployToQa') {
