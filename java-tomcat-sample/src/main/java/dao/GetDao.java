@@ -19,10 +19,10 @@ public class GetDao
 			//Connection con = DriverManager.getConnection("jdbc:mysql://database-2023.ctsdvy14yp5u.us-east-1.rds.amazonaws.com:3306/db","admin","12345678");
 			 //Connection con = DriverManager.getConnection("jdbc:mysql://endpoint:3306/db","username","DB_PASSWORD_HERE");
 			
-				db_username=java ssm.getparameter('username')
-				db_password=java ssm.getparameter('password')
-				Replace the code to retrieve the db_hostname, db_user, db_password from SSM Parameter Store
-				Replace the code to retrieve the db_hostname, db_user, db_password from Secret Manager
+				db_username=java ssm.getparameter('username');
+				db_password=java ssm.getparameter('password');
+				Replace the code to retrieve the db_hostname, db_user, db_password from SSM Parameter Store;
+				Replace the code to retrieve the db_hostname, db_user, db_password from Secret Manager;
 			Connection con = DriverManager.getConnection("jdbc:mysql://database-2023.ctsdvy14yp5u.us-east-1.rds.amazonaws.com:3306/db",username,password);
 		
 			Statement st = con.createStatement();
