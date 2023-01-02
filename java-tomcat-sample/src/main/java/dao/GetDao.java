@@ -19,9 +19,9 @@ public class GetDao
 			//Connection con = DriverManager.getConnection("jdbc:mysql://database-2023.ctsdvy14yp5u.us-east-1.rds.amazonaws.com:3306/db","admin","12345678");
 			 //Connection con = DriverManager.getConnection("jdbc:mysql://endpoint:3306/db","username","DB_PASSWORD_HERE");
 			
-			db_username=java ssm.getparameter('dev_rds_creds');
-			db_password=java ssm.getparameter('dev_rds_creds');
-			db_hostname=java ssm.getparameter('dev_rds_creds');
+			db_username=java ssm.getparameter('db_username');
+			db_password=java ssm.getparameter('db_password');
+			db_hostname=java ssm.getparameter('db_hostname');
 			
 				Connection con = DriverManager.getConnection("jdbc:mysql://db_hostname:3306/db","db_username","db_password");
 		
