@@ -59,6 +59,11 @@
       <version>3.0.1</version>
       <scope>provided</scope>
   </dependency>
+    <dependency>
+<groupId>mysql</groupId>
+<artifactId>mysql-connector-java</artifactId>
+<version>8.0.24</version>
+</dependency>
   </dependencies>
   <build>
     <finalName>java-tomcat-maven-example</finalName>
