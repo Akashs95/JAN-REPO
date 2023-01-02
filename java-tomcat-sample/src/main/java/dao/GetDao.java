@@ -16,7 +16,7 @@ public class GetDao
 		{
 			Class.forName("com.mysql.jdbc.Driver");
 			String ssm_parameter_name = "SSM_PARAMETER_NAME";
-			Connection con = DriverManager.getConnection("jdbc:mysql://java-tomcat-db.cgsel8pj8zsp.ap-south-1.rds.amazonaws.com:3306/db","admin","AWSDevOps#123");
+			Connection con = DriverManager.getConnection("database-2023.ctsdvy14yp5u.us-east-1.rds.amazonaws.com","admin","12345678");
 			// Connection con = DriverManager.getConnection("jdbc:mysql://DB_HOSTNAME_HERE:3306/db","root","DB_PASSWORD_HERE");
 			/*
 				db_username=java ssm.getparameter('dev_rds_creds')
